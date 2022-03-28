@@ -36,8 +36,8 @@
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">APPS</a></li>
+								<li><a href="#work">Projects</a></li>
+								<li><a href="#about">WEB APPS</a></li>
 								<li><a href="#contact">Resumé</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -49,84 +49,119 @@
 
 						<!-- Intro -->
 							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Airton is passionate about using analytics to uncover and address marketing and customer needs through 
-								innovative dogital products. Samples of his work and solutions can be found <a href="#work">here</a>.</p>
-								<p>Airton is a native French speaker, data analyst and digital marketer with 4 years of
-								advertising and measurement experience at Meta (formerly Facebook) with Travel,
-								eCommerce, Government and Nonprofits advertisers – most recently managing public
-								health media campaigns & measurement efforts for the CDC, 2020 Census Bureau & Ad Council
-								amidst the Covid-19 Health Crisis.</p>
+								<h2 class="major">About Airton:</h2>
+								<span class="image main"><img src="images/airton.png" alt="" /></span>
+								<p>As an experienced digital marketing professional from Meta(Facebook), with academic data science accredidation and
+								projects under his belt, Airton is able to bring together a proven track record of customer obsession,
+								digital product measurement, ownership, and marketing with the intellectual rigor of computational statistics and
+								decision theory inherent to his Data Science coursework. This blended experience places him in a unique position to merge theory and real
+								world application across disciplines, enabling him to serve as an empathetic liaison between analytics and business teams capable of partnering crossfuntionally to catalyze revenue growth and
+								customer satisfaction. Project samples can be <a href="#work">found here</a>.</p>
+
+								<p>
+								<center> <b>SKILLS:</b> <br/>
+								<b>Data Visualization:</b> plotly, matplotlib, tableau, seaborn<br/>
+								<b>Coding</b>: python (numpy, scipy, pandas, sklearn), git,
+								SQL<br/>
+								<b>Statistical Methods & Modeling:</b>hypothesis testing, Regression/Classification, K-means/DBSCAN clustering, sampling<br/><b>Machine Learning:</b>
+								feature engineering, NLP, Regularization/Tuning, Time Series, Recommender Systems<br/><b>Advertising:</b> media planning, measurement, a/b testing,
+								data privacy, search, social, organic, google analytics
+								</p> </center>
+						
 							</article>
 
 						<!-- Work -->
 							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p> 1) <a href="https://github.com/akamdem/walkability-project">Walkability Project </a> <br>
-									This is a regression problem that predicts whether the walkability of the Los Angeles area correlates with air quality.
-									The goal of this analysis was to determine if areas of high walkability are also areas with good air quality --
-									particularly within the Los Angeles area whose walkability and air quality can vary depending on accessibility to public
-									transit, forest fires, and proximity to the ocean.
-									
-									Looking at the U.S. EPA Walkability Index which highlights the walkability of a region (using census data from 2017-2019
-									and other data sources) and air quality data pulled from the PurpleAir API, we are hoping to determine if regions (CBSAs
-									& CSAs) with high walkability also have good air quality.
-									
-									The stakeholders are families who want to move to Los Angeles in an area of both good walkability and good air quality.</p>
-								<p> 2) <a href="https://docs.google.com/presentation/d/1GlG-mkx0_Y945vruGSpO55LzJy-CGmHk9Fb4A-Mc8Dk/edit#slide=id.g11d5609459a_0_86"> Digital Nomads Project</a> <br>
-									As more and more jobs become remote, many workers no longer find the need to be tied down to one place. Traveling abroad
-									can sometime still be prohibitive due to language barriers, culture shock, and visa restrictions among many factors.
-									This project seeks to give would-be digital nomads a place to start as they're contemplating exploring the continental
-									United States. This project focuses primarily on counties across the country since looking at cities may be overwhelming
-									(there are over 19,000 incorporated cities in the US) or underwhelming since only a few major cities in the country tend
-									to attract most visitors and attention already -- and would-be explorers/nomads tend to be more interested in the
-									environments around major cities than the cities themselves. Digital nomads love to enjoy cities but don't necessarily
-									want to find themselves confined to just one city (many of them are running from major metropolitan cities) so counties
-									presented a suitable level to carry out this analysis and project.
+								<h2 class="major">Projects</h2>
+								<span class="image main"><img src="images/usa.png" alt="" /></span>
+								<p> 1) <a href="https://docs.google.com/presentation/d/1GlG-mkx0_Y945vruGSpO55LzJy-CGmHk9Fb4A-Mc8Dk/edit#slide=id.g11d5609459a_0_86">Digital Nomads</a> <br>
+									In this project, my objective was to provide new destination recommendations within the US for potential digital nomads at the county level.
+									I use K-means to cluster all of the counties in The US into distinct 
+									groups and explore the significance of different silhouette scores and cluster sizes in the process as a potential basis for recommending new regions to potential nomads.
+									Visualizations of the clusters and key data points from each county and cluster can be found in 
+									this<a href="https://public.tableau.com/app/profile/airton.tatoug.kamdem/viz/county_tb/Dashboard1?publish=yes"> Tableau Dashboard.</a>
+									Ultimately, since even the best silhouette score was relatively low (.4), the better approach towards making reliable recommendations was through plotting all of the counties along with the 200+ 
+									features (gender, diversity, broadband access etc.) associated with each, and using Eucledian distances to return the counties closest to the ones that a user prefers.
+									I deployed this strategy through this <a href="https://share.streamlit.io/akamdem/counties/main/app.py"> Web Application </a> -- feel free to enter your US county and explore! (or try mine: Montgomery County, Maryland).
+
 								</p>
-								<p> 3) <a href="https://github.com/akamdem/digital-literacy-project"> Digital Media Literacy Project</a> <br>
-									Digital literacy continues to be a challenging issue, particularly for communities that are not native English speakers, as 
-									it can be mroe difficult for them to pickup the nuances and contextual patterns behind the deluge of social and digital media posts
-									claiming to be legitimate while mostly masking conspiracy theories behind the guise of Journalism. This project sought to provide 
-									and initial layer of defense for the communities by taking inputs from users in the form of posts and headlines, vectorizing the text,
-									and applying a Natural Language Processing model to make an initial classigication of the given post/headline as something that either
-									resembles thousands of credible media posts, or conspirary theory posts with a percentage likelyhood for each class.
+								<p> 2) <a href="https://github.com/akamdem/digital-literacy-project">Digital Media Literacy</a> <br>
+									Digital literacy continues to be a challenging issue in The US, particularly for communities that are not native English speakers, as 
+									it can be more difficult for them to pickup the nuances and contextual patterns behind the deluge of social and digital media posts
+									claiming legitimacy, while masking conspiracy theories behind the guise of credible journalism. In this project, I sought to provide 
+									an initial layer of defense for these communities by taking inputs from users in the form of text (social media posts, headlines etc.), vectorizing the text,
+									and applying a trained Natural Language Processing model to classify the given post/headline as something that either
+									resembles thousands of other credible news media posts, or rather conspirary theory posts that have been pulled and analysed through Reddit's PushShift API. 
+									Along with the initial classification, the model also outputs the probability behind its determination, providing users with this additional datapoints
+									to inform further investigation into the credibility of a post or headline -- click <a href="https://share.streamlit.io/akamdem/misinfo/main/app.py">here to explore my NLP Web Application</a>
 								</p>
+
+								<p> 3) <a href="https://www.facebook.com/gpa/case-studies/2021-06-11-cdc-ad-council">Centers for Disease Control & Prevention (CDC) Media Partnership</a> <br>
+									The case study linked above highlights the result of the partnership that Airton guided for 20 months as a Partner Manager at Meta(Facebook). In this partnership, Airton
+									managed Meta's advertising relationship with the Centers for Disease Control and Prevention through the Covid-19 Pandemic, helping the company and US government 
+									respond to the public health crisis by promoting the presence of accurate health information
+									across the united states through Meta platforms. Airton, the Ad Council, and the CDC ultimately served billions of impressions to over 80% of the US population, and after designing measurement approaches
+									to quantify the impact of this effort, this case study was published to highlight key results from a few of the campaigns Airton designed, showcasing a 3 point increase in 
+									18 - 34 year olds' willingess to wear masks, and a 2 point increase in this group's perception of the importance of masks at a 99% confidence level, equating to over 4 million people's perceptions
+									being shifted on this topic through the highlighted campaigns alone. 
+								</p>
+
+								<p> 4) <a href="https://github.com/akamdem/walkability-project">Walkability & Air Quality in California</a> <br>
+									This was a team project using EPA (Environmental Protection Agency) and open air quality data to provide guidance to families hoping to relocate to and within the largest metropolitan areas of california. 
+									In this project, I wrangled EPA data, concatenated this with air quality data pulled through an open API maintained by a company called Purple Air, 
+									and I used Python(Pandas, Plotly, Matplotlib) to clean the data, visualize the correlations between different factors (employment rate, density etc.) and the patterns/trends observable accross these key features in the concatenated dataset.
+									Our team of data analyst then developed and evaluated a set of regression models that predict the Air Quality of the Los Angeles, 
+									Sacramento, and San Francisco throughout the year based on the most highly correlated features (income, temperature etc.).  
+								</p>
+								<p> 5) <a href="https://www.facebook.com/business/success/stewart-hotel#">Facebook Dynamic Ads</a> <br>
+									The case study linked above highlights the result of Airton's partnership with several businesses accross the Travel Industry, where he unlocked a new level
+									of product adoption for the company's most profitable advertising product.
+									Airton identified a gap in product adoption, namely tied to a lack of data being shared across the marketing funnel, he directed customer surveys and 
+									product analysis to confirm his hypothesis, and identified key players in industry that could help him and Facebook address the blocker in product adoption.
+									In partnership with a digital media agency, and a booking engine company, Airton was able to build a small case for these partners to expand the reach and 
+									application of Facebook's pixel and Dynamic Ads to their heavily trafficed domains, demonstrating the potential value add for each of these partners along the way.
+									Having proven success at a small scale, Airton partnered with team leads, PMs and PMMs to launch the public case study linked above and provide a 
+									model for the rest of the industry to unlock this key product,
+									opening up $10+ million dollar a year in revenue for Facebook, as the expanded usage of the Facebook Pixel and Dynamic Ads products
+									helped dozens of businesses achieve results such as the ones noted in this case study -- 50x return on ad spend, 82% decrease in cost per transaction. The study was
+									published <a href="https://www.facebook.com/business/success/stewart-hotel#">here</a> by the proud clients as well.   
+								</p>
+
 							</article>
 
 						<!-- About -->
 							<article id="about">
-								<h2 class="major">APPS</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<h2 class="major">WEB APPS</h2>
+								<span class="image main"><img src="images/social.png" alt="" /></span>
 								<p> 1) <a href="https://share.streamlit.io/akamdem/misinfo/main/app.py">Digital Literacy Application:</a> <br>
 								<br>This Application promotes digital media literacy in communities that are less familiar with english. The app scrapes over 5000 posts from 
 								the r/worldnews subreddit and r/conspiracy subreddit, vectorizes the text, and trains a
 								Naïve Bayes model on these posts to identify linguistic patterns behind credible news post/headlines and
 								those that are more likely to be stemming from conspiracy theories. The app then takes in new inputs from users and
-								predicts a classification based on the NLP model's training, returning a percentage likelihood for either class
-								predicted.
+								predicts a classification based on the NLP model's training, returning a probability for either class predicted.
 </p>
 
 								<p> 2) <a href="https://share.streamlit.io/akamdem/counties/main/app.py">Digital Nomads Application:</a> <br>
-								<br>This Application recommends new potential detinations in the United States
-								the r/worldnews subreddit and r/conspiracy subreddit, vectorizes the text, and trains a
-								Naïve Bayes model on these posts to identify linguistic patterns behind credible news post/headlines and
-								those that are more likely to be stemming from conspiracy theories. The app then takes in new inputs from users and
-								predicts a classification based on the NLP model's training, returning a percentage likelihood for either class
-								predicted.</p>
+								<br>This Application recommends new destinations in the United States for potential digital nomads.
+								It plots 3141 US counties and uses Eucledian distances to return a recommendation closest to the one submitted by the user
+								to help them identify a domestic region most similar to county they're already fond of. This App is also
+								accompanied by a public <a href="https://public.tableau.com/app/profile/airton.tatoug.kamdem/viz/county_tb/Dashboard1?publish=yes"> Tableau Dashboard</a> 
+								that visualizes key data points (median age, income etc) about each county, and clusters of 
+								counties as calculated through K-means clustering with a peak silhouette score of around .4 and cluster size of 49.
+								</p>
+
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Resumé & Contact</h2>
+								<span class="image main"><img src="images/contact.jpeg" alt="" /></span>
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">airtonkamdem@gmail.com</label>
 											<label for="name">202.758.5669</label>
-											<a href="/images/GA_RESUME.pdf" download> Click here to download Airton's Resumé</a>
+											<a href="/images/kamdemCV.pdf" download> Click here to download Airton's Resumé</a>
 									<!--      <input type="text" name="name" id="name" /> -->
 										</div>
 										<div class="field half">
